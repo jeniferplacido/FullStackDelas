@@ -1,0 +1,132 @@
+
+.card-degrade-rosa {
+  background: linear-gradient(to right, #ff66b2, #8a2be2) !important;
+  color: white !important;
+}
+
+.card-degrade-lilas {
+  background: linear-gradient(to right, #8a2be2, #c71585) !important;
+  color: white !important;
+}
+  .card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 18rem;
+    margin-bottom: 20px;
+  }
+
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  /* Adicionando um degradê rosa e lilás com texto branco */
+  .card-degrade-rosa {
+    background: linear-gradient(to right, #ff66b2, #8a2be2);
+    color: white;
+  }
+
+  .card-degrade-lilas {
+    background: linear-gradient(to right, #8a2be2, #c71585);
+    color: white;
+  }
+
+  .background-image {
+    background-image: url('../../assets/img/068f8049-45f2-4f9e-89d3-fa04ca86b99e.webp');
+    background-size: cover; /* Garante que a imagem cubra completamente o elemento */
+    background-position: center;
+    min-height: 100vh; /* Garante uma altura mínima de 100% da altura da visualização (viewport) */
+    padding-bottom: 60px;
+    position: relative;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .curriculo-form {
+    font-family: 'Lobster', cursive;
+  }
+
+  .curriculo-form .btn-cadastrar {
+    border-radius: 20px; /* Borda arredondada */
+    padding: 10px 20px; /* Espaçamento interno */
+    transition: background-color 0.3s ease; /* Efeito de transição na cor de fundo */
+
+  }
+
+  .curriculo-form .btn-cadastrar:hover {
+    background-color: #fff; /* Cor de fundo ao passar o mouse (branco) */
+    color: #FF69B4; /* Cor do texto ao passar o mouse (rosa) */
+  }
+
+  /* Estilizando a exibição dos currículos */
+  .curriculo-card {
+    margin-bottom: 10px;
+    border-radius: 10px; /* Borda arredondada */
+  margin-bottom: 10px;
+  box-sizing: border-box;
+
+  }
+  @media (max-width: 768px) {
+    .curriculo-card {
+      width: calc(50% - 20px); /* Altera a largura para 50% em telas menores que 768px */
+    }
+  }
+
+  @media (max-width: 576px) {
+    .curriculo-card {
+      width: calc(100% - 20px); /* Altera a largura para 100% em telas menores que 576px */
+    }
+  }
+
+  .curriculo-card .card-body {
+    padding: 1.25rem;
+  }
+
+  .curriculo-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .curriculo-card .card-text {
+    font-size: 1rem;
+  }
+
+
+
+  .btn-cadastrar {
+    background-color: transparent; /* Remove a cor de fundo */
+    background-color: #FF69B4;
+    color: #fff;
+    text-align: center;/* Cor do texto */
+    border-radius: 20px; /* Borda arredondada */
+    padding: 5px 15px; /* Espaçamento interno */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+  }
+
+  .btn-cadastrar:hover {
+    background-color: #007bff; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+  }

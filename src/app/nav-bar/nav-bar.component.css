@@ -1,0 +1,37 @@
+/* nav-bar.component.css ou estilo direto no componente */
+/* Estilizando a barra de navegação */
+.navbar {
+  background-color: #FF69B4; /* Cor de fundo rosa */
+  border: none;
+
+}
+
+/* Estilizando o texto da marca e o ícone do botão de alternância */
+.navbar-brand,
+.navbar-toggler-icon {
+  color: #fff; /* Cor do texto e do ícone (branco) */
+
+}
+
+/* Estilizando os links da barra de navegação */
+.ml-auto {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Lobster', cursive;
+}
+
+.ml-auto a {
+  color: #fff; /* Cor do texto (branco) */
+  text-decoration: none;
+  border: 3px solid #fff; /* Borda branca */
+  border-radius: 20px; /* Borda arredondada */
+  padding: 4px 8px; /* Espaçamento interno */
+  transition: background-color 0.3s ease; /* Efeito de transição na cor de fundo */
+}
+
+.ml-auto a:hover {
+  background-color: #fff; /* Cor de fundo ao passar o mouse (branco) */
+  color: #FF69B4; /* Cor do texto ao passar o mouse (rosa) */
+}
