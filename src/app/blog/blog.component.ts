@@ -25,19 +25,27 @@ export class BlogComponent implements OnInit {
   }
 
   carregarCurriculos() {
-    this.blogService.getCurriculos().subscribe((curriculos) => {
-      this.curriculos = curriculos;
-    });
+    this.blogService.getCurriculos().subscribe(
+      (curriculos) => {
+        this.curriculos = curriculos;
+      },
+      (error) => {
+        console.error('Erro ao carregar currículos:', error);
+      }
+    );
   }
 
   cadastrarCurriculo() {
     if (this.curriculoForm.valid) {
-      this.blogService.adicionarCurriculos(this.curriculoForm.value).then(() => {
-        this.carregarCurriculos();
-        this.curriculoForm.reset();
-      }).catch((error) => {
-        console.error('Erro ao cadastrar currículo:', error);
-      });
+      this.blogService.adicionarCurriculo(this.curriculoForm.value).subscribe(
+        () => {
+          this.carregarCurriculos();
+          this.curriculoForm.reset();
+        },
+        (error) => {
+          console.error('Erro ao cadastrar currículo:', error);
+        }
+      );
     } else {
       this.markFormAsTouched(this.curriculoForm);
     }
@@ -53,4 +61,3 @@ export class BlogComponent implements OnInit {
     });
   }
 }
-
